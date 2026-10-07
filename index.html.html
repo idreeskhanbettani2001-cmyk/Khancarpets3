@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rugs and Carpets in Rawalpindi | Khan Carpets and Rugs</title>
+<meta name="description" content="Khan Carpets and Rugs, Satellite Town Rawalpindi. Persian rugs, Turkish rugs, carpets, masjid saf carpets, prayer rugs, artificial grass and flooring.">
+<style>
+:root{
+  --ink:#1f1a17; --muted:#6f6760; --line:#e8e1d8; --bg:#fff; --soft:#f7f3ee;
+  --accent:#8c1c26; --accent-dark:#6d1119; --gold:#b8893a; --green:#1f8a4c;
+  --radius:4px; --max:1280px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.15;font-weight:700}
+
+/* top bar */
+.topbar{background:var(--soft);border-bottom:1px solid var(--line);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;gap:16px}
+.topbar ul{display:flex;gap:22px}
+.topbar a:hover{color:var(--accent)}
+.topbar .call{display:flex;align-items:center;gap:8px;font-weight:600}
+.topbar .call small{font-weight:400;color:var(--muted)}
+
+/* header */
+.header{background:#fff;border-bottom:1px solid var(--line)}
+.header .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;height:84px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:46px;height:46px;border-radius:50%;background:var(--accent);display:grid;place-items:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700}
+.logo-text b{display:block;font-family:'Cormorant Garamond',serif;font-size:26px;letter-spacing:.5px;line-height:1}
+.logo-text span{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+.search{display:flex;max-width:520px;width:100%;margin:0 auto;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.search input{flex:1;border:0;padding:12px 16px;font:inherit;outline:0;min-width:0}
+.search button{padding:0 18px;background:var(--accent);color:#fff}
+.tools{display:flex;gap:18px;align-items:center}
+.tool{position:relative;display:flex;align-items:center;gap:8px;font-weight:500}
+.tool svg{width:24px;height:24px}
+.badge{position:absolute;top:-8px;left:14px;background:var(--accent);color:#fff;font-size:11px;min-width:18px;height:18px;border-radius:9px;display:grid;place-items:center;padding:0 4px}
+.menu-btn{display:none}
+
+/* nav */
+.nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.nav .wrap{display:flex;align-items:center;justify-content:center}
+.nav>.wrap>ul{display:flex;gap:2px;flex-wrap:wrap;justify-content:center}
+.nav li{position:relative}
+.nav li>a{display:block;padding:16px 16px;font-weight:500;font-size:15px;white-space:nowrap}
+.nav li:hover>a{color:var(--accent)}
+.nav .sub{position:absolute;top:100%;left:0;min-width:230px;background:#fff;border:1px solid var(--line);box-shadow:0 14px 30px rgba(0,0,0,.08);padding:8px 0;opacity:0;visibility:hidden;transform:translateY(6px);transition:.18s}
+.nav li:hover .sub{opacity:1;visibility:visible;transform:none}
+.nav .sub a{display:block;padding:9px 20px;font-size:14.5px}
+.nav .sub a:hover{background:var(--soft);color:var(--accent)}
+.has-sub>a::after{content:"";display:inline-block;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin:0 0 3px 8px}
+
+/* announcement */
+.announce{background:var(--accent);color:#fff;text-align:center;padding:9px 16px;font-size:14px;letter-spacing:.3px}
+
+/* hero */
+.hero{position:relative;min-height:620px;display:grid;align-items:center;overflow:hidden;background:#2a1215;color:#fff}
+.hero-bg{position:absolute;inset:0;opacity:.95}
+.hero-bg svg{width:100%;height:100%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,8,10,.88) 0%,rgba(25,8,10,.55) 48%,rgba(25,8,10,.1) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero-copy{max-width:560px}
+.hero-copy .kicker{display:inline-block;border:1px solid rgba(255,255,255,.4);padding:5px 14px;font-size:14px;margin-bottom:22px}
+.hero h1{font-size:clamp(44px,6.4vw,84px);margin-bottom:12px}
+.hero p{font-size:20px;opacity:.92;margin-bottom:30px;max-width:46ch}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 34px;font-weight:600;border-radius:var(--radius);transition:.2s;border:2px solid var(--accent)}
+.btn:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+.btn.ghost{background:transparent;border-color:#fff;margin-left:10px}
+.btn.ghost:hover{background:#fff;color:var(--ink)}
+.btn.dark{background:var(--ink);border-color:var(--ink)}
+.btn.sm{padding:9px 20px;font-size:14px}
+.hero-gift{position:absolute;right:6%;bottom:44px;z-index:2;background:#fff;color:var(--ink);padding:18px 22px;max-width:260px;border-radius:var(--radius);box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.hero-gift b{font-family:'Cormorant Garamond',serif;font-size:24px;display:block;line-height:1.1;margin-bottom:6px}
+.hero-gift span{font-size:14px;color:var(--muted)}
+
+/* sections */
+section{padding:76px 0}
+.sec-head{text-align:center;margin-bottom:42px}
+.sec-head h2{font-size:clamp(32px,4vw,46px);margin-bottom:8px}
+.sec-head p{color:var(--muted);max-width:56ch;margin:0 auto}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.cat{position:relative;overflow:hidden;border-radius:var(--radius);aspect-ratio:1/1.05;display:block;background:var(--soft)}
+.cat .art{position:absolute;inset:0;transition:transform .5s}
+.cat:hover .art{transform:scale(1.07)}
+.cat .art svg{width:100%;height:100%}
+.cat h3{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 18px;font-size:27px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.cat h3 small{display:block;font-family:'Jost',sans-serif;font-weight:400;font-size:13.5px;opacity:.85;margin-top:2px}
+
+/* products */
+.tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:34px}
+.tab{padding:9px 22px;border:1px solid var(--line);border-radius:30px;font-weight:500;font-size:15px;transition:.2s}
+.tab:hover{border-color:var(--accent);color:var(--accent)}
+.tab.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .25s}
+.card:hover{box-shadow:0 14px 34px rgba(60,30,20,.12)}
+.card .img{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--soft)}
+.card .img svg,.card .img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .img svg,.card:hover .img img{transform:scale(1.06)}
+.off{position:absolute;top:10px;left:10px;background:var(--accent);color:#fff;font-size:12.5px;font-weight:600;padding:3px 9px;border-radius:3px;z-index:2}
+.sold{position:absolute;top:10px;right:10px;background:#444;color:#fff;font-size:12.5px;padding:3px 9px;border-radius:3px;z-index:2}
+.card .acts{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;gap:8px;padding:12px;transform:translateY(100%);transition:.25s;background:linear-gradient(transparent,rgba(0,0,0,.4))}
+.card:hover .acts{transform:none}
+.acts button{background:#fff;font-size:13px;font-weight:600;padding:7px 12px;border-radius:3px}
+.acts button:hover{background:var(--accent);color:#fff}
+.card .info{padding:14px 14px 18px;display:flex;flex-direction:column;gap:4px;flex:1}
+.card .cat-name{font-size:13px;color:var(--muted)}
+.card h3{font-family:'Jost',sans-serif;font-size:16px;font-weight:500;line-height:1.35}
+.price{margin-top:auto;padding-top:6px;font-weight:600}
+.price s{color:var(--muted);font-weight:400;margin-right:8px;font-size:14px}
+.price .now{color:var(--accent)}
+.card.hide{display:none}
+
+/* explore */
+.explore{background:var(--soft)}
+.explore-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.exp{background:#fff;border-radius:var(--radius);overflow:hidden;text-align:center;border:1px solid var(--line);transition:.25s}
+.exp:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(60,30,20,.1)}
+.exp .art{aspect-ratio:1/1}
+.exp .art svg{width:100%;height:100%}
+.exp h4{font-size:25px;padding:16px 10px 0}
+.exp span{display:block;padding:2px 10px 18px;color:var(--muted);font-size:14px}
+
+/* masjid */
+.masjid-wrap{display:grid;grid-template-columns:.9fr 1.6fr;gap:40px;align-items:center}
+.masjid-copy h2{font-size:clamp(34px,4vw,50px);margin-bottom:14px}
+.masjid-copy p{color:var(--muted);margin-bottom:24px}
+.masjid-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.masjid-grid .card .img{aspect-ratio:1/1}
+
+/* collections / features */
+.coll{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.coll-item{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+.coll-item .art{aspect-ratio:4/3}
+.coll-item .art svg{width:100%;height:100%}
+.coll-item .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.coll-item h3{font-size:27px}
+.coll-item p{color:var(--muted);font-size:15.5px}
+.coll-item .row{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:8px}
+
+/* testimonials */
+.quotes{background:var(--ink);color:#fff}
+.quotes .sec-head p{color:#cfc6bb}
+.q-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.q{border:1px solid rgba(255,255,255,.18);padding:30px;border-radius:var(--radius)}
+.q blockquote{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.35;margin-bottom:18px}
+.q cite{font-style:normal;font-size:15px;color:#cfc6bb}
+.stars{color:#e3b04b;letter-spacing:2px;margin-bottom:10px}
+
+/* rules */
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.rules .art{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3.4}
+.rules .art svg{width:100%;height:100%}
+.rules h2{font-size:clamp(32px,3.6vw,44px);margin-bottom:12px}
+.rules p{color:var(--muted);margin-bottom:20px}
+.rules li{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line)}
+.rules li::before{content:"";flex:none;width:9px;height:9px;margin-top:9px;background:var(--gold);transform:rotate(45deg)}
+
+/* seo + faq */
+.seo{background:var(--soft)}
+.seo-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px}
+.seo h2{font-size:clamp(30px,3.4vw,42px);margin-bottom:14px}
+.seo h3{font-size:27px;margin:24px 0 8px}
+.seo p,.seo li{color:var(--muted);margin-bottom:10px}
+.seo li{padding-left:18px;position:relative}
+.seo li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;background:var(--accent);border-radius:50%}
+.seo strong{color:var(--ink)}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px}
+.faq summary{list-style:none;cursor:pointer;padding:16px 50px 16px 18px;font-weight:600;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:24px;color:var(--accent);font-weight:400}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{padding:0 18px 18px;color:var(--muted);margin:0}
+
+/* benefits */
+.benefits{padding:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ben-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.ben{display:flex;gap:16px;align-items:center;padding:32px 24px;border-right:1px solid var(--line)}
+.ben:last-child{border:0}
+.ben svg{width:44px;height:44px;flex:none;stroke:var(--accent);fill:none;stroke-width:1.5}
+.ben h4{font-family:'Jost',sans-serif;font-size:15.5px;letter-spacing:.5px;font-weight:600;text-transform:uppercase}
+.ben span{font-size:14px;color:var(--muted)}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:36px}
+.visit-info{background:var(--soft);padding:34px;border-radius:var(--radius)}
+.visit-info h2{font-size:38px;margin-bottom:6px}
+.visit-info>p{color:var(--muted);margin-bottom:22px}
+.vi{display:flex;gap:14px;margin-bottom:18px}
+.vi svg{width:22px;height:22px;flex:none;margin-top:3px;stroke:var(--accent);fill:none;stroke-width:1.8}
+.vi b{display:block}
+.vi span,.vi a{color:var(--muted);font-size:15.5px}
+.vi a:hover{color:var(--accent)}
+.map{border-radius:var(--radius);overflow:hidden;min-height:430px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:430px;border:0}
+.contact-form{margin-top:26px;display:grid;gap:12px}
+.contact-form input,.contact-form textarea{width:100%;border:1px solid var(--line);padding:12px 14px;font:inherit;border-radius:var(--radius);background:#fff}
+.contact-form textarea{min-height:90px;resize:vertical}
+.form-ok{display:none;background:#e7f5ec;color:#155d34;padding:12px 14px;border-radius:var(--radius);font-size:15px}
+
+/* footer */
+footer{background:#1b1512;color:#d9d0c6;padding:64px 0 0}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px}
+footer .logo-text b{color:#fff}
+footer p{font-size:15px;margin:16px 0}
+footer h5{font-family:'Jost',sans-serif;font-size:15px;color:#fff;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+footer li{margin-bottom:9px;font-size:15px}
+footer a:hover{color:#fff;text-decoration:underline}
+.social{display:flex;gap:10px;margin-top:6px}
+.social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.25);border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:600}
+.social a:hover{background:var(--accent);border-color:var(--accent);text-decoration:none}
+.copy{border-top:1px solid rgba(255,255,255,.12);padding:20px 0;font-size:14px;text-align:center}
+
+/* whatsapp + toast + backtop */
+.wa{position:fixed;right:22px;bottom:22px;z-index:99;display:flex;align-items:center;gap:10px;background:#25d366;color:#fff;border-radius:40px;padding:0 20px 0 0;box-shadow:0 10px 26px rgba(0,0,0,.28);transition:.2s}
+.wa:hover{transform:translateY(-3px)}
+.wa .ic{width:58px;height:58px;display:grid;place-items:center;position:relative}
+.wa .ic svg{width:32px;height:32px;fill:#fff}
+.wa .ic::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:ping 2.2s infinite}
+.wa span{font-weight:600;font-size:15px}
+@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.55);opacity:0}}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,40px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:30px;font-size:15px;opacity:0;pointer-events:none;transition:.3s;z-index:120}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.top{position:fixed;left:22px;bottom:22px;z-index:98;width:46px;height:46px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.15);display:grid;place-items:center;opacity:0;visibility:hidden;transition:.2s}
+.top.show{opacity:1;visibility:visible}
+.top svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:2}
+
+/* responsive */
+@media(max-width:1180px){.grid{grid-template-columns:repeat(4,1fr)}.explore-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:960px){
+  .topbar ul{display:none}.topbar .wrap{justify-content:center}
+  .header .wrap{grid-template-columns:auto 1fr auto;height:72px;gap:12px}
+  .search{display:none}
+  .menu-btn{display:grid;place-items:center;width:42px;height:42px}
+  .menu-btn svg{width:26px;height:26px;stroke:var(--ink);fill:none;stroke-width:2}
+  .tool span.t{display:none}
+  .nav{position:static;display:none}
+  .nav.open{display:block}
+  .nav .wrap{padding:0}
+  .nav>.wrap>ul{flex-direction:column;width:100%}
+  .nav li>a{padding:14px 20px;border-bottom:1px solid var(--line)}
+  .nav .sub{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;background:var(--soft);padding:0}
+  .nav .sub a{padding-left:38px}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .masjid-wrap,.rules,.seo-grid,.visit-grid{grid-template-columns:1fr}
+  .masjid-grid{grid-template-columns:repeat(2,1fr)}
+  .coll,.q-grid{grid-template-columns:1fr}
+  .ben-grid{grid-template-columns:repeat(2,1fr)}
+  .ben{border-bottom:1px solid var(--line)}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .hero{min-height:540px}.hero-gift{display:none}
+}
+@media(max-width:600px){
+  section{padding:54px 0}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .explore-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .cats{gap:12px}.cat h3{font-size:22px;padding:34px 12px 12px}
+  .logo-text span{display:none}
+  .btn.ghost{margin:10px 0 0}
+  .f-grid{grid-template-columns:1fr}
+  .wa span{display:none}.wa{padding:0}
+  .card .acts{display:none}
+  .card .info{padding:10px 10px 14px}.card h3{font-size:14.5px}
+  .ben-grid{grid-template-columns:1fr}.ben{border-right:0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap">
+    <ul>
+      <li><a href="#visit">Showroom</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="#visit">Contact</a></li>
+    </ul>
+    <a class="call" href="tel:+923159945149">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      0315 9945149 <small>Talk to an expert</small>
+    </a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Khan Carpets and Rugs home">
+      <div class="logo-mark">K</div>
+      <div class="logo-text"><b>Khan Carpets</b><span>and Rugs</span></div>
+    </a>
+    <form class="search" role="search" onsubmit="return doSearch(event)">
+      <input id="q" type="search" placeholder="Search rugs, carpets, prayer rugs..." aria-label="Search products">
+      <button type="submit" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    </form>
+    <div class="tools">
+      <a class="tool" href="#products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.4-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.300 4.600-9.300 9-9.300 9z"/></svg><b class="badge" id="wishCount">0</b><span class="t">Wishlist</span></a>
+      <a class="tool" href="#products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6h15l-1.500 9H7.500L6 3H3"/><circle cx="9" cy="20" r="1.500"/><circle cx="18" cy="20" r="1.500"/></svg><b class="badge" id="cartCount">0</b><span class="t">Cart</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="wrap">
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li class="has-sub"><a href="#categories">Rugs</a>
+        <div class="sub"><a href="#products" data-filter="Rugs">Persian Rugs</a><a href="#products" data-filter="Rugs">Turkish Rugs</a><a href="#products" data-filter="Rugs">5x8 Rugs</a><a href="#explore">Shag and Vintage Rugs</a></div></li>
+      <li><a href="#categories">Carpets</a></li>
+      <li class="has-sub"><a href="#masjid">Masjid Carpets</a>
+        <div class="sub"><a href="#masjid">Saf Carpet</a><a href="#masjid">Jaynamaz Rolls</a></div></li>
+      <li><a href="#categories">Artificial Grass</a></li>
+      <li><a href="#products" data-filter="Prayer Rugs">Prayer Rugs</a></li>
+      <li class="has-sub"><a href="#categories">Flooring</a>
+        <div class="sub"><a href="#categories">Carpet Tiles</a><a href="#categories">Vinyl Flooring</a><a href="#categories">Laminate Flooring</a><a href="#products" data-filter="Door Mats">Door Mats</a></div></li>
+      <li><a href="#categories">Decor</a></li>
+      <li><a href="#visit">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="announce">Free delivery within Rawalpindi and Islamabad on orders above Rs 100,000</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" style="padding:0">
+  <div class="hero-bg" id="heroArt"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="kicker">Satellite Town, Rawalpindi</span>
+      <h1>Rugs and Carpets in Rawalpindi</h1>
+      <p>Persian and Turkish rugs, masjid saf carpets and flooring, chosen by a family shop rated 4.8 on Google by 129 customers.</p>
+      <a class="btn" href="#products">Shop now</a>
+      <a class="btn ghost" href="#visit">Visit our shop</a>
+    </div>
+  </div>
+  <div class="hero-gift"><b>Rated 4.8 on Google</b><span>129 reviews. Open every day until 10 pm.</span></div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="wrap">
+    <div class="sec-head"><h2>Our categories</h2><p>New rugs and flooring arrive every month. Pick a category to start.</p></div>
+    <div class="cats" id="catGrid"></div>
+  </div>
+</section>
+
+<!-- BESTSELLERS -->
+<section id="products" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>Weekly bestsellers</h2><p>The pieces our customers ask for most.</p></div>
+    <div class="tabs" id="tabs"></div>
+    <div class="grid" id="prodGrid"></div>
+  </div>
+</section>
+
+<!-- EXPLORE -->
+<section class="explore" id="explore">
+  <div class="wrap">
+    <div class="sec-head"><h2>More to explore</h2><p>Your imagination, our craftsmanship.</p></div>
+    <div class="explore-grid" id="expGrid"></div>
+  </div>
+</section>
+
+<!-- MASJID -->
+<section id="masjid">
+  <div class="wrap masjid-wrap">
+    <div class="masjid-copy">
+      <h2>Masjid jaynamaz and saf carpets</h2>
+      <p>Dense, soft and easy to keep clean. We supply masjids, madrasas and community halls with saf carpets cut to the prayer hall. Send us the hall size on WhatsApp and we will quote the same day.</p>
+      <a class="btn" href="#" onclick="waOrder('Masjid saf carpet');return false;">Get a masjid quote</a>
+    </div>
+    <div class="masjid-grid" id="masjidGrid"></div>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Unveiling our product lineup</h2><p>Three rugs from the showroom floor this week.</p></div>
+    <div class="coll" id="collGrid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="quotes">
+  <div class="wrap">
+    <div class="sec-head"><h2>What customers say</h2><p>Sample reviews for the demo. Replace with real Google reviews at launch.</p></div>
+    <div class="q-grid">
+      <div class="q"><div class="stars">★★★★★</div><blockquote>The Turkish rug looks even better in our lounge than it did in the shop. Honest price, no pressure.</blockquote><cite>Ayesha R., Satellite Town</cite></div>
+      <div class="q"><div class="stars">★★★★★</div><blockquote>They measured our masjid hall and had the saf carpet fitted in two days.</blockquote><cite>Muhammad Usman, Rawalpindi</cite></div>
+      <div class="q"><div class="stars">★★★★★</div><blockquote>Helped me pick a size that actually fits under the dining table. Very patient staff.</blockquote><cite>Sana K., Islamabad</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section id="about">
+  <div class="wrap rules">
+    <div class="art" id="rulesArt"></div>
+    <div>
+      <h2>Rules for choosing the perfect rug for your room</h2>
+      <p>Whether you live alone or with family, the living room works hardest. Keep these five points in mind when you shop.</p>
+      <ul>
+        <li>Check that the rug is the right size for the space.</li>
+        <li>Pick a colour and pattern that complement the existing decor.</li>
+        <li>Match the style of the rug to the room, traditional or modern.</li>
+        <li>Let the shape of the room guide the shape of the rug.</li>
+        <li>Consider the material, and how much traffic the room gets.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SEO + FAQ -->
+<section class="seo" id="faq">
+  <div class="wrap seo-grid">
+    <div>
+      <h2>Premium rugs and carpets from Khan Carpets and Rugs</h2>
+      <p>Based in Satellite Town, Rawalpindi, <strong>Khan Carpets and Rugs</strong> stocks rugs, carpets and flooring for homes, offices and masjids. We keep a wide range so you can compare designs in person and take home what suits your room.</p>
+      <h3>Rugs</h3>
+      <ul>
+        <li><strong>Persian style rugs</strong> with traditional medallions and tightly woven borders.</li>
+        <li><strong>Turkish rugs</strong> in vintage and modern colours that blend into most interiors.</li>
+        <li><strong>Shag, geometric and vintage rugs</strong> to define a seating or sleeping area.</li>
+      </ul>
+      <h3>Carpets and flooring</h3>
+      <p>For wall-to-wall coverage we offer carpet rolls, carpet tiles, vinyl and laminate flooring, door mats and artificial grass, plus masjid saf carpets cut to size.</p>
+    </div>
+    <div class="faq">
+      <h2>Frequently asked questions</h2>
+      <details open><summary>What is the difference between a rug and a carpet?</summary><p>A carpet usually covers a whole room wall to wall. A rug is a finished piece that covers one area, such as under a coffee table or bed.</p></details>
+      <details><summary>Do you deliver across Pakistan?</summary><p>Yes. We deliver from Rawalpindi with careful packing. Message us on WhatsApp with your city for the delivery charge.</p></details>
+      <details><summary>How do I choose the right rug size?</summary><p>Leave at least the front legs of your sofa and chairs on the rug. This ties the seating area together.</p></details>
+      <details><summary>Do you supply masjid carpets?</summary><p>Yes. We supply saf carpets and jaynamaz rolls for masjids and can cut them to the hall dimensions.</p></details>
+      <details><summary>How should I clean my Persian or Turkish rug?</summary><p>Vacuum without a rotating brush, blot spills with a dry cloth instead of scrubbing, and use a professional rug wash for deep cleaning.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <div class="wrap ben-grid">
+    <div class="ben"><svg viewBox="0 0 48 48"><path d="M4 12h26v20H4zM30 18h8l6 7v7H30z"/><circle cx="14" cy="35" r="3.500"/><circle cx="36" cy="35" r="3.500"/></svg><div><h4>Fast delivery</h4><span>Rawalpindi and Islamabad</span></div></div>
+    <div class="ben"><svg viewBox="0 0 48 48"><rect x="4" y="10" width="40" height="28" rx="3"/><path d="M4 18h40M10 30h10"/></svg><div><h4>Easy payment</h4><span>Cash, bank transfer, card</span></div></div>
+    <div class="ben"><svg viewBox="0 0 48 48"><path d="M8 28v-6a16 16 0 0 1 32 0v6"/><rect x="5" y="26" width="8" height="12" rx="2"/><rect x="35" y="26" width="8" height="12" rx="2"/></svg><div><h4>Dedicated support</h4><span>Call or WhatsApp us</span></div></div>
+    <div class="ben"><svg viewBox="0 0 48 48"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="m17 24 5 5 9-10"/></svg><div><h4>Quality checked</h4><span>Inspected before dispatch</span></div></div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head"><h2>Visit our showroom</h2><p>See the rugs in daylight, feel the pile, and get advice from the team.</p></div>
+    <div class="visit-grid">
+      <div class="visit-info">
+        <h2>Khan Carpets and Rugs</h2>
+        <p>Open today until 10 pm</p>
+        <div class="vi"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.200 7-12a7 7 0 0 0-14 0c0 5.800 7 12 7 12z"/><circle cx="12" cy="10" r="2.500"/></svg><div><b>Address</b><a href="https://www.google.com/maps/search/?api=1&query=Khan+Carpets+and+Rugs+Saidpur+Road+Kali+Tanki+Chowk+Satellite+Town+Rawalpindi" target="_blank" rel="noopener">Shop no. 12, Khan Carpets and Rugs, Saidpur Road, Kali Tanki Chowk, 4th Rd, Satellite Town Block B, Rawalpindi 46000</a></div></div>
+        <div class="vi"><svg viewBox="0 0 24 24"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.300 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg><div><b>Phone and WhatsApp</b><a href="tel:+923159945149">0315 9945149</a></div></div>
+        <div class="vi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Hours</b><span>Open daily, closes at 10 pm</span></div></div>
+        <div class="vi"><svg viewBox="0 0 24 24"><path d="m12 3 2.700 5.600 6.100.9-4.400 4.300 1 6.100L12 17l-5.400 2.900 1-6.100L3.200 9.500l6.100-.9z"/></svg><div><b>Google rating</b><span>4.8 from 129 reviews</span></div></div>
+        <form class="contact-form" id="cform" onsubmit="return sendForm(event)">
+          <input name="name" placeholder="Your name" required>
+          <input name="phone" type="tel" placeholder="Phone number" required>
+          <textarea name="msg" placeholder="Tell us the room size or the rug you want" required></textarea>
+          <button class="btn" type="submit">Send on WhatsApp</button>
+          <div class="form-ok" id="formOk">Opening WhatsApp with your message...</div>
+        </form>
+      </div>
+      <div class="map">
+        <iframe title="Khan Carpets and Rugs on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Khan%20Carpets%20and%20Rugs%20Saidpur%20Road%20Kali%20Tanki%20Chowk%20Satellite%20Town%20Block%20B%20Rawalpindi&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="logo" href="#top"><div class="logo-mark">K</div><div class="logo-text"><b>Khan Carpets</b><span>and Rugs</span></div></a>
+        <p>Quality rugs, carpets and flooring solutions in Rawalpindi, Pakistan.</p>
+        <p>Shop no. 12, Saidpur Road, Kali Tanki Chowk, Satellite Town Block B, Rawalpindi 46000</p>
+        <p><a href="tel:+923159945149">Phone: 0315 9945149</a></p>
+        <div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="YouTube">yt</a><a href="#" aria-label="Pinterest">p</a></div>
+      </div>
+      <div><h5>Shop</h5><ul><li><a href="#categories">Rugs</a></li><li><a href="#categories">Carpets</a></li><li><a href="#masjid">Masjid Carpets</a></li><li><a href="#categories">Artificial Grass</a></li><li><a href="#categories">Flooring</a></li></ul></div>
+      <div><h5>Useful links</h5><ul><li><a href="#faq">FAQs</a></li><li><a href="#about">Buying guide</a></li><li><a href="#visit">Contact us</a></li><li><a href="#">Privacy policy</a></li><li><a href="#">Returns</a></li></ul></div>
+      <div><h5>Our shop</h5><ul><li><a href="#visit">Showroom and map</a></li><li><a href="#visit">Opening hours</a></li><li><a href="#" onclick="waOrder('a custom size');return false;">Custom sizes</a></li><li><a href="#" onclick="waOrder('a masjid quote');return false;">Masjid orders</a></li></ul></div>
+    </div>
+  </div>
+  <div class="copy">© 2026 Khan Carpets and Rugs. All rights reserved. Demo website concept.</div>
+</footer>
+
+<a class="wa" id="waBtn" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="ic"><svg viewBox="0 0 32 32"><path d="M16 3C8.800 3 3 8.800 3 16c0 2.300.6 4.500 1.800 6.500L3 29l6.700-1.700A13 13 0 0 0 16 29c7.200 0 13-5.800 13-13S23.200 3 16 3zm0 23.700c-2 0-3.900-.6-5.600-1.600l-.4-.2-4 1 1.100-3.900-.3-.4A10.600 10.600 0 1 1 16 26.700zm5.800-7.900c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.700 8.700 0 0 1-4.300-3.800c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.400 3.700 3.700 0 0 0-1.100 2.700c0 1.600 1.200 3.200 1.300 3.400.2.200 2.300 3.500 5.600 4.900 2 .9 2.800.9 3.800.8.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.4z"/></svg></span>
+  <span>Chat with us</span>
+</a>
+<button class="top" id="topBtn" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></svg></button>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ===== SETTINGS ===== */
+const WHATSAPP = "923159945149";            // 0315 9945149 in international format
+const SHOP = "Khan Carpets and Rugs";
+/* To use real photos later, put image URLs here (key = product id). Missing keys fall back to the generated rug art. */
+const PHOTOS = {};
+
+/* ===== RUG ART GENERATOR (original SVG, no external images) ===== */
+const PALETTES = {
+  maroon:["#5e1119","#8c1c26","#d6a85a","#f1e3c6"],
+  navy:["#14213d","#2b4570","#e0b25a","#f3ead4"],
+  grey:["#2e2e32","#6d6d75","#c7c2b8","#f1eee8"],
+  green:["#0e3b2a","#1f6b47","#d9b76a","#eee6cf"],
+  beige:["#8a6c48","#c3a67b","#7a2f2a","#f5ecda"],
+  purple:["#3b1f4f","#6d3d8c","#e0b15a","#f1e6f3"],
+  teal:["#0d4a4f","#2b8a8d","#eab66a","#e9f0ec"],
+  ivory:["#e9dfc9","#c9b48d","#7b2d2d","#fffaf0"],
+  brown:["#3f2517","#7a4a2b","#d2a35f","#f1e2c8"],
+  blue:["#10305c","#2f6aa8","#e6c879","#eef3f8"],
+  red:["#7c0f1c","#b8222f","#e8c27b","#f8e9d2"]
+};
+function rugSVG(seed,pal,style){
+  const p=PALETTES[pal]||PALETTES.maroon,[a,b,c,d]=p;
+  let s="";
+  const W=300,H=400;
+  s+=`<rect width="${W}" height="${H}" fill="${a}"/>`;
+  s+=`<rect x="10" y="10" width="${W-20}" height="${H-20}" fill="none" stroke="${c}" stroke-width="3"/>`;
+  s+=`<rect x="24" y="24" width="${W-48}" height="${H-48}" fill="${b}"/>`;
+  s+=`<rect x="34" y="34" width="${W-68}" height="${H-68}" fill="none" stroke="${d}" stroke-width="1.5" stroke-dasharray="${style==='geo'?'2 5':'8 4'}"/>`;
+  // border motifs
+  for(let x=46;x<W-46;x+=22){s+=`<path d="M${x} 44l7 7-7 7-7-7z" fill="${c}" opacity=".9"/><path d="M${x} ${H-44}l7-7-7-7-7 7z" fill="${c}" opacity=".9"/>`}
+  for(let y=70;y<H-60;y+=22){s+=`<path d="M44 ${y}l7 7-7 7-7-7z" fill="${c}" opacity=".9"/><path d="M${W-44} ${y}l7 7-7 7-7-7z" fill="${c}" opacity=".9"/>`}
+  const cx=W/2,cy=H/2;
+  s+=`<rect x="64" y="64" width="${W-128}" height="${H-128}" fill="${a}"/>`;
+  if(style==='geo'){
+    for(let r=0;r<6;r++)for(let q=0;q<5;q++){
+      const x=74+q*30,y=76+r*47;
+      s+=`<path d="M${x+14} ${y}l14 22-14 22-14-22z" fill="${(r+q)%2?c:d}" opacity="${(r+q)%2?.95:.85}"/>`;
+    }
+  }else if(style==='plain'){
+    for(let y=84;y<H-84;y+=18)s+=`<rect x="76" y="${y}" width="${W-152}" height="3" fill="${d}" opacity=".25"/>`;
+    s+=`<rect x="${cx-34}" y="${cy-60}" width="68" height="120" rx="34" fill="none" stroke="${c}" stroke-width="3"/><path d="M${cx} ${cy-44}l24 30v44h-48v-44z" fill="${c}" opacity=".85"/>`;
+  }else{
+    s+=`<path d="M${cx} 90L${W-76} ${cy}${cx} ${H-90}76 ${cy}z" fill="${b}"/>`;
+    s+=`<path d="M${cx} 112L${W-100} ${cy}${cx} ${H-112}100 ${cy}z" fill="${d}"/>`;
+    s+=`<path d="M${cx} 136L${W-120} ${cy}${cx} ${H-136}120 ${cy}z" fill="${c}"/>`;
+    s+=`<circle cx="${cx}" cy="${cy}" r="${24+(seed%3)*3}" fill="${a}"/><circle cx="${cx}" cy="${cy}" r="12" fill="${d}"/>`;
+    for(let i=0;i<8;i++){const ang=i*Math.PI/4+seed;s+=`<circle cx="${cx+Math.cos(ang)*34}" cy="${cy+Math.sin(ang)*34}" r="4" fill="${c}"/>`}
+    [[84,84],[W-84,84],[84,H-84],[W-84,H-84]].forEach(([x,y])=>{s+=`<circle cx="${x}" cy="${y}" r="10" fill="${b}"/><circle cx="${x}" cy="${y}" r="4" fill="${c}"/>`});
+  }
+  // fringe
+  for(let x=14;x<W-10;x+=8){s+=`<rect x="${x}" y="0" width="2" height="10" fill="${d}"/><rect x="${x}" y="${H-10}" width="2" height="10" fill="${d}"/>`}
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rug design">${s}</svg>`;
+}
+function wide(seed,pal,style){return rugSVG(seed,pal,style)}
+
+/* ===== DATA ===== */
+const CATEGORIES=[
+  ["Carpets","Wall to wall rolls","green","plain"],
+  ["Rugs","Persian and Turkish","maroon","medal"],
+  ["Prayer Rugs","Soft and portable","teal","plain"],
+  ["Carpet Tiles","Office and home","grey","geo"],
+  ["Door Mats","Entrance mats","brown","geo"],
+  ["Laminate Flooring","Wood look floors","beige","geo"],
+  ["Decor","Wall hangings","purple","medal"],
+  ["Masjid Carpets","Saf and jaynamaz","red","plain"]
+];
+const PRODUCTS=[
+  {id:1,n:"Heritage Black Grey Rug 4x6ft",c:"Rugs",o:23700,p:11799,pal:"grey",st:"medal",sold:true},
+  {id:2,n:"Royal Medallion Maroon Rug 4x6ft",c:"Rugs",o:23700,p:19500,pal:"maroon",st:"medal"},
+  {id:3,n:"Persian Dreamcatcher Brown Rug 3x5ft",c:"Rugs",o:17600,p:14500,pal:"brown",st:"medal"},
+  {id:4,n:"Dream Weft Beige Turkish Rug 3x5ft",c:"Rugs",o:15700,p:11999,pal:"beige",st:"geo",sold:true},
+  {id:5,n:"Eclectic Purple Persian Rug 3x5ft",c:"Rugs",o:19499,p:14499,pal:"purple",st:"medal"},
+  {id:6,n:"Mahal Brown Persian Rug 3.4x5.5ft",c:"Rugs",o:35800,p:25800,pal:"brown",st:"medal"},
+  {id:7,n:"Artistic Angles Maroon Rug 3x5ft",c:"Rugs",o:18400,p:13499,pal:"red",st:"geo"},
+  {id:8,n:"Garden White Turkish Rug 4x5.8ft",c:"Rugs",o:26000,p:14200,pal:"ivory",st:"medal"},
+  {id:9,n:"Ephesus Blue Rug 3x5ft",c:"Rugs",o:21200,p:12499,pal:"blue",st:"geo",sold:true},
+  {id:10,n:"Natural Multicolor Turkish Rug 4x5.5ft",c:"Rugs",o:16800,p:11800,pal:"teal",st:"geo"},
+  {id:11,n:"Plush Green Room Carpet (per sq ft)",c:"Carpets",o:null,p:180,pal:"green",st:"plain"},
+  {id:12,n:"Luxe Grey Room Carpet (per sq ft)",c:"Carpets",o:240,p:195,pal:"grey",st:"plain"},
+  {id:13,n:"Velvet Prayer Rug Maroon",c:"Prayer Rugs",o:3200,p:2400,pal:"maroon",st:"plain"},
+  {id:14,n:"Velvet Prayer Rug Teal",c:"Prayer Rugs",o:3200,p:2400,pal:"teal",st:"plain"},
+  {id:15,n:"Foam Prayer Mat Navy",c:"Prayer Rugs",o:null,p:1800,pal:"navy",st:"plain"},
+  {id:16,n:"Rubber Door Mat Brown 2x3ft",c:"Door Mats",o:1500,p:1100,pal:"brown",st:"geo"},
+  {id:17,n:"Woven Door Mat Grey 2x3ft",c:"Door Mats",o:null,p:1300,pal:"grey",st:"geo"},
+  {id:18,n:"Entrance Mat Beige 2x3ft",c:"Door Mats",o:1700,p:1350,pal:"beige",st:"geo"}
+];
+const MASJID=[
+  ["Firdaus Green Saf Carpet","green"],["Sultan Maroon Saf Carpet","maroon"],
+  ["Istanbul Blue Jaynamaz","navy"],["Hira Light Green Jaynamaz","teal"],
+  ["Mehrab Soft Maroon Saf","red"],["Saff Awwal Green Saf","green"],
+  ["Tasbeeh Maroon Saf","maroon"],["Al Mubarak Green Jaynamaz","green"]
+];
+const EXPLORE=[["Persian Rugs","Traditional / Classic","maroon","medal"],["Turkish Rugs","Vintage / Modern","blue","geo"],["Shag Rugs","Plush / Shaded","beige","plain"],["Vintage Rugs","Distressed / Faded","brown","medal"],["Geometric Rugs","Patterned / Modern","teal","geo"]];
+const COLL=[
+  {n:"Ivory Persian Rug 4x6ft",o:52000,p:45400,pal:"ivory",st:"medal",t:"Persian rugs are woven with tight knots and fine borders. Ivory suits bright living rooms and shows off the pattern."},
+  {n:"Vintage Beige Turkish Rug 6.7x9.8ft",o:57500,p:47600,pal:"beige",st:"geo",t:"Turkish rugs adapt to modern, bohemian and mixed interiors. This large size anchors a full lounge set."},
+  {n:"Calligraphy Wall Hanging Rug",o:null,p:13400,pal:"navy",st:"plain",t:"A wall hanging rug with Islamic calligraphy. It adds colour and meaning to a lounge or entrance wall."}
+];
+
+/* ===== HELPERS ===== */
+const money=n=>"Rs "+n.toLocaleString("en-PK");
+const art=(o)=>PHOTOS[o.id]?`<img src="${PHOTOS[o.id]}" alt="${o.n}" loading="lazy">`:rugSVG(o.id||3,o.pal,o.st);
+const $=s=>document.querySelector(s);
+let cart=0,wish=0;
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("show"),2200)}
+function waLink(msg){return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`}
+function waOrder(item){window.open(waLink(`Hello ${SHOP}, I would like to ask about: ${item}`),"_blank")}
+
+/* ===== RENDER ===== */
+$("#heroArt").innerHTML=`<svg viewBox="0 0 1400 620" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs><pattern id="hp" width="120" height="120" patternUnits="userSpaceOnUse"><rect width="120" height="120" fill="#4a1017"/><path d="M60 8l44 52-44 52L16 60z" fill="none" stroke="#d6a85a" stroke-width="2"/><path d="M60 32l22 28-22 28-22-28z" fill="#8c1c26"/><circle cx="60" cy="60" r="7" fill="#d6a85a"/><circle cx="0" cy="0" r="9" fill="#d6a85a" opacity=".7"/><circle cx="120" cy="0" r="9" fill="#d6a85a" opacity=".7"/><circle cx="0" cy="120" r="9" fill="#d6a85a" opacity=".7"/><circle cx="120" cy="120" r="9" fill="#d6a85a" opacity=".7"/></pattern></defs>
+  <rect width="1400" height="620" fill="url(#hp)"/></svg>`;
+
+$("#catGrid").innerHTML=CATEGORIES.map(([n,s,pal,st],i)=>`<a class="cat" href="#products" data-filter="${["Rugs","Prayer Rugs","Door Mats","Carpets"].includes(n)?n:""}"><div class="art">${rugSVG(i+2,pal,st)}</div><h3>${n}<small>${s}</small></h3></a>`).join("");
+
+const tabNames=["All","Rugs","Carpets","Prayer Rugs","Door Mats"];
+$("#tabs").innerHTML=tabNames.map((t,i)=>`<button class="tab${i?"":" on"}" data-tab="${t}">${t}</button>`).join("");
+
+function card(p,opts={}){
+  const off=p.o?Math.round((1-p.p/p.o)*100):0;
+  return `<article class="card" data-cat="${p.c}" data-name="${p.n.toLowerCase()}">
+    ${off?`<span class="off">-${off}%</span>`:""}${p.sold?`<span class="sold">Sold out</span>`:""}
+    <div class="img">${art(p)}<div class="acts"><button data-wish>Wishlist</button><button data-ask="${p.n}">Ask</button></div></div>
+    <div class="info"><span class="cat-name">${p.c}</span><h3>${p.n}</h3>
+    ${opts.noPrice?"":`<div class="price">${p.o?`<s>${money(p.o)}</s>`:""}<span class="now">${money(p.p)}</span></div>`}
+    ${p.sold?`<button class="btn sm dark" data-ask="${p.n}" style="margin-top:10px">Ask when back</button>`:`<button class="btn sm" data-add="${p.n}" style="margin-top:10px">Add to cart</button>`}
+    </div></article>`;
+}
+$("#prodGrid").innerHTML=PRODUCTS.map(p=>card(p)).join("");
+
+$("#expGrid").innerHTML=EXPLORE.map(([n,s,pal,st],i)=>`<a class="exp" href="#products"><div class="art">${rugSVG(i+7,pal,st)}</div><h4>${n}</h4><span>${s}</span></a>`).join("");
+
+$("#masjidGrid").innerHTML=MASJID.slice(0,8).map(([n,pal],i)=>`<article class="card"><div class="img">${rugSVG(i+20,pal,"plain")}</div><div class="info"><span class="cat-name">Masjid Carpets</span><h3>${n}</h3><button class="btn sm" data-ask="${n}" style="margin-top:10px">Get quote</button></div></article>`).join("");
+
+$("#collGrid").innerHTML=COLL.map((c,i)=>`<article class="coll-item"><div class="art">${rugSVG(i+30,c.pal,c.st)}</div><div class="body"><h3>${c.n}</h3><p>${c.t}</p><div class="row"><div class="price">${c.o?`<s>${money(c.o)}</s>`:""}<span class="now">${money(c.p)}</span></div><button class="btn sm" data-add="${c.n}">Add to cart</button></div></div></article>`).join("");
+
+$("#rulesArt").innerHTML=rugSVG(41,"teal","medal");
+
+/* ===== INTERACTION ===== */
+function applyFilter(t){
+  document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("on",b.dataset.tab===t));
+  document.querySelectorAll("#prodGrid .card").forEach(c=>c.classList.toggle("hide",t!=="All"&&c.dataset.cat!==t));
+}
+document.addEventListener("click",e=>{
+  const tab=e.target.closest("[data-tab]");if(tab)applyFilter(tab.dataset.tab);
+  const f=e.target.closest("[data-filter]");if(f&&f.dataset.filter)applyFilter(f.dataset.filter);
+  const add=e.target.closest("[data-add]");if(add){cart++;$("#cartCount").textContent=cart;toast("Added to cart: "+add.dataset.add)}
+  const w=e.target.closest("[data-wish]");if(w){const on=w.classList.toggle("on");wish+=on?1:-1;$("#wishCount").textContent=wish;w.textContent=on?"Saved":"Wishlist";toast(on?"Saved to wishlist":"Removed from wishlist")}
+  const ask=e.target.closest("[data-ask]");if(ask)waOrder(ask.dataset.ask);
+  if(e.target.closest("#nav a")&&window.innerWidth<=960)$("#nav").classList.remove("open");
+});
+$("#menuBtn").addEventListener("click",()=>$("#nav").classList.toggle("open"));
+function doSearch(e){
+  e.preventDefault();const q=$("#q").value.trim().toLowerCase();applyFilter("All");
+  let n=0;document.querySelectorAll("#prodGrid .card").forEach(c=>{const m=!q||c.dataset.name.includes(q)||c.dataset.cat.toLowerCase().includes(q);c.classList.toggle("hide",!m);if(m)n++});
+  document.getElementById("products").scrollIntoView({behavior:"smooth"});
+  toast(n?`${n} product${n>1?"s":""} found`:"No match. Try rug, carpet or prayer.");return false;
+}
+function sendForm(e){
+  e.preventDefault();const f=e.target;
+  const msg=`Hello ${SHOP}, my name is ${f.name.value} (${f.phone.value}). ${f.msg.value}`;
+  $("#formOk").style.display="block";
+  window.open(waLink(msg),"_blank");return false;
+}
+$("#waBtn").href=waLink(`Hello ${SHOP}, I found you on your website and would like to ask about rugs and carpets.`);
+const topBtn=$("#topBtn");
+addEventListener("scroll",()=>topBtn.classList.toggle("show",scrollY>700),{passive:true});
+topBtn.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+</script>
+</body>
+</html>
